@@ -1,0 +1,405 @@
+https://www.guidancesoftware.com/encase-forensic-imager
+https://accessdata.com/product-download/
+https://accessdata.com/product-download/ftk-imager-version-4-2-0
+https://sumuri.com/software/paladin/
+https://platzi.com/cursos/linux/
+https://platzi.com/cursos/linux/
+https://platzi.com/cursos/pentesting/
+https://platzi.com/cursos/ingenieria/
+https://www.forensicfocus.com/
+https://digital-forensics.sans.org
+https://en.wikipedia.org/wiki/List_of_file_signatures
+
+
+Command Line Versions of FTK Imager
+-------------------------------------------------------
+http://accessdata.com/product-download/debian-and-ubuntu-x64-3-1-1
+http://accessdata.com/product-download/mac-os-10-5-and-10-6x-version-3-1-1
+http://accessdata.com/product-download/windows-32bit-3-1-1
+http://accessdata.com/product-download/fedora-and-red-hat-version-x64-3-1-1
+http://accessdata.com/product-download/fedora-and-red-hat-version-32bit-3-1-1
+http://accessdata.com/product-download/debian-and-ubuntu-32bit-3-1-1
+
+
+Windowsx 64
+http://ad-exe.s3.amazonaws.com/AccessData_FTK_Imager--4.2.1.exe
+http://marketing.accessdata.com/ftkimager4.2.0
+
+Paladine
+https://drive.google.com/open?id=1h9P6CBdUj2O9a251_AI7uPktoseQdUMt
+
+Imager_Lite_3
+https://ad-zip.s3.amazonaws.com/Imager_Lite_3.1.1.zip
+
+Análisis de Registro de Windows: SAM
+---------------------------------------
+https://www.forensicswiki.org/wiki/Regripper
+https://drive.google.com/open?id=1e3t4dhxHZfX51igCu8MJsHsZhnWL-Z-3
+https://github.com/keydet89/RegRipper2.8
+
+
+Análisis de Registro de Windows: Software
+https://drive.google.com/open?id=1e3t4dhxHZfX51igCu8MJsHsZhnWL-Z-3
+
+
+Análisis de logs de un Sistema Windows
+https://www.fireeye.com/services/freeware/highlighter.html/imagenderecursos
+https://drive.google.com/open?id=1e3t4dhxHZfX51igCu8MJsHsZhnWL-Z-3
+
+Shell Bags
+https://www.nirsoft.net/utils/shell_bags_view.html
+
+
+Descargar Imagen 
+https://drive.google.com/open?id=1h9P6CBdUj2O9a251_AI7uPktoseQdUMt
+Descargar  Imagen
+https://drive.google.com/open?id=1hyVOIEZfY0qYsG6WYD-jvyNq4zBrcxBT
+Descargar  Imagen
+https://drive.google.com/open?id=17Ct9BSit0U0bYYl-Pn2_TELoCPkyr9kO
+Descargar 
+https://drive.google.com/open?id=1e3t4dhxHZfX51igCu8MJsHsZhnWL-Z-3
+Descargar  Imagen
+https://drive.google.com/open?id=1eWOdLNrPgn2mmXCVBU9LZbYPcWxU47WU
+Análisis preliminar de sistemas Windows
+https://www.pinguin.lu/fred
+
+
+
+Elaborar un inventario de evidencia y plan de adquisiciones en un escenario simulado
+
+Muchos de los ejemplos que veremos en el curso estarán basados en la colección de imágenes forenses del proyecto CFReDS (Computer Forensics Reference Data Sets) del NIST (Instituto Nacional de Estándares y Tecnología) de Estados Unidos. Esta colección de imágenes forenses contiene varios casos que simulan diferentes escenarios, diferentes requerimientos y diferentes investigaciones que son comunes para un investigador. Las imágenes, los detalles de los casos y los archivos para descargar se encuentran en el siguiente enlace:
+https://www.cfreds.nist.gov/
+
+Bloqueo de escritura por software
+https://www.forensicswiki.org/wiki/Write_Blockers
+https://sourceforge.net/projects/usbwriteblockerforwindows8/
+
+
+---------------------------------------------------------------
+Sistemas de archivos Windows: FAT, NTFS
+Un sistema de archivos es un conjunto de reglas y procesos para administrar la información en un medio de almacenamiento.
+Los archivos o ficheros contienen datos que tienen características comunes y están delimitados.
+Las carpetas o directorios son archivos que contienen información de otros archivos en una estructura jerárquica.
+Los archivos especiales pueden ser archivos que dirijan hacia otro archivo, o que permitan la comunicación con algún dispositivo.
+Las rutas son una ubicación lógica dentro de la jerarquía del sistema de archivos.
+Los metadatos son atributos que identifican ciertas propiedades de la información contenida en un archivo.
+Los permisos son reglas de acceso, modificación y borrado de información en los archivos.
+
+FAT (File Allocation Table):
+Tabla de asignación de archivos.
+Máximo archivos de 4GB.
+Re-implementado como exFAT.
+
+NTFS (New Technology File System):
+Sistema por defecto de la familia NT.
+Introdujo el system journaling.
+Propietario de Microsoft. No es 100% compatible.
+
+EXT File System:
+No usa extensiones.
+Utiliza i-nodos como apuntadores.
+Minimiza la fragmentación.
+Puntos de montaje.
+
+HFS+ (Hierarchical File System Plus):
+Usado en dispositivos Mac y iPhone.
+Reduce casi a cero la fragmentación.
+No permite acceso concurrente.
+Soporte de fechas hasta el 6 de febrero de 2040.
+
+APFS (Apple File System):
+Multiplataforma.
+Espacio libre compartido.
+2 versiones: case-sensitive y case-insensitive.
+
+
+
+@c3tuxpo2018
+DEsde 1994 se creo la norma FSH la cual sirvio como forma de estandarizar la estructura de directorios de cualquier Linux/ unix que quisieran aderirse voluntariamente
+La estructura es la siguiente
+**/ ** Directorio Raiz tambien llamado root contiene toda la jerarquia
+/boot Directorio donde se aloja el arranque del sistema operativo
+/home Directorio donde se aloja toda la información de los usuarios del sistema
+**/etc ** Directorio que contiene todos los archivos de configuracion de los distintos servicios activos en el sistema
+**/bin ** Directorio donde estan las aplicaciones binarias tanto para usuarios como para superusuario
+/var Directorio donde se alojan los archivos variables como logs del sistema, temporales, bases de datos
+**/root ** Directorio exclusivo para uso del superusuario del sistema
+/usr Directorio donde se aloja utilidades y aplicaciones disponibles para todos los usuarios
+/dev Directorio don de se aloja todos los archivos que se relacionan al hardware del sistema
+
+Recuerden:
+En Linux todo es un archivo
+Linux solo hace una cosa a la vez pero la hace bien
+
+Las tres distribuciones Maestras de las cuales casi el 90% de las distribuciones Linux nacen son
+Debian (Ubuntu, Kanopix)
+Red Hat (Fedora, Centos, Arch, mandriva )
+Slacware (Suse )
+
+Linux reconoce los discos duros de acuerdo a su tecnología y les agrega una letra del alfabeto en orden de detección ejemplo
+(no siempre)
+hda (Hard Disk a tecnologia Ide ) si hubiera otro lo nombra hdb
+sda (hard Disk a tecnologia Scsi sata ) si hubiera otro lo nombra sdb
+fd0 (floppy disk 0 cero
+sd0 (cdrom )
+
+En el archivo /etc/passwd se encuentran todos los usuarios del sistema configurados
+En /etc/shadows estan los valores Hash de las contraseñas de los usaurios
+En /etc/resolv.conf esta las direcciones Ip de los dns que el sistema esta usando
+
+-------------------------------------------------
+Elaboración de informe preliminar
+-------------------------------------------------
+Cuando ocurre un incidente informático, las personas afectadas siempre necesitan tener respuesta rápidamente. Esta es una constante con la que te vas a encontrar en tus investigaciones, y tu capacidad, no solo para responder rápidamente al incidente, sino para manejar las expectativas de quienes esperan tu análisis, va a ser muy importante en tu carrera como investigador.
+
+Precisamente por esta expectativa y necesidad de respuesta que siempre se encuentran en las investigaciones, en muchas ocasiones es útil realizar un análisis preliminar e incluso presentar un informe con los resultados que obtengas, con el fin de dar un primer avance en el desarrollo de la investigación. Regularmente, un informe de análisis preliminar incluye:
+
+Introducción al caso: Una presentación general del incidente y el contexto de la investigación. Debe mostrarle al lector claramente por qué se inició una investigación, y quién está a cargo de la misma.
+
+Resumen general: Una descripción breve del proceso de investigación que se está ejecutando, y las actividades que se han desarrollado hasta este punto. Si hay resultados importantes que se hayan obtenido, es muy importante incluirlos acá para mostrar avances en la investigación.
+
+Inventario de evidencia identificada: Una relación general de la evidencia que se ha preservado y sobre la que se está realizando el análisis. Es importante mencionar los criterios usados durante la etapa de identificación para escoger los dispositivos en particular, así como explicar las decisiones que se han tomado durante el proceso de investigación (¿Por qué se decidió analizar un dispositivo en particular?, ¿Por qué se utilizó cierta estrategia o herramienta?).
+
+Reportes de adquisición de evidencia: Los informes técnicos de adquisición. Es importante asegurar desde las primeras etapas que la información con la que estamos trabajando es íntegra, sobre todo en contextos o escenarios donde pueda haber dudas sobre la calidad de la información obtenida. Recuerda documentar todos los pasos y decisiones que hayas tomado durante la preservación de cada elemento.
+
+Información general de los sistemas preservados: La primera etapa del análisis consiste en identificar qué información hay disponible y cómo está almacenada. Regularmente esto implica analizar los sistemas operativos e identificar datos sobre ellos como la zona horaria, la fecha de instalación, los usuarios configurados, entre otros.
+
+Información encontrada en las imágenes forenses: Para tomar decisiones sobre cómo avanzar en la investigación, es necesario tener claro qué información se encontró. Datos como cuentas de correo electrónico, carpetas de usuario, documentos y similares, son importantes en esta etapa y es necesario documentarlos.
+
+Hallazgos preliminares, si existen: Es importante describir detalladamente cualquier hallazgo o resultado importante que se haya encontrado. En muchas ocasiones los resultados más importantes se identifican en la primera etapa de la investigación, y es importante documentarlos rápidamente para mostrar avances.
+
+Siguientes pasos: Finalmente, un buen indicador de una investigación estructurada y que está avanzando es un plan de trabajo sobre los resultados identificados. En un informe preliminar idealmente debería explicarse el plan de trabajo que se está siguiendo, el avance actual sobre este y los pasos a seguir para concluir satisfactoriamente la investigación.
+
+Como siempre, ten en cuenta que esto no es un absoluto, y siempre encontrarás escenarios, investigaciones o casos que tengan requerimientos diferentes o muy específicos. Una de las características más valiosas en un investigador es su capacidad de adaptarse a situaciones diversas. No pierdas de vista el objetivo principal de la investigación y recuerda, para tu plan de acción, las 6 preguntas básicas del método de investigación.
+
+
+
+
+https://platzi.com/clases/1611-forense/20544-crear-una-imagen-de-contenido-personalizado-para-a/
+
+
+
+
+Referencia del registro de Windows
+---------------------------------------------------------------------
+
+En las últimas clases aprendiste a analizar algunas ubicaciones del Registro de Windows, y a obtener información a partir de llaves usando herramientas como FRED y RegRipper. Sin embargo, el Registro de Windows es una base de datos extensa que contiene muchas ubicaciones que pueden tener información útil, y con las que deberás estar familiarizado.
+A continuación, se detallan algunas de las ubicaciones comunes donde un investigador forense puede encontrar información relevante para una investigación dentro del Registro de Windows.
+
+Archivo NTUSER.dat
+
+Historial de búsqueda
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Search\Assistant\ACMru
+
+Documentos recientes
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+
+Documentos recientes de Office
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\10\Word\FileMRU
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\10\Excel \FileMRU
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\10\PowerPoint \FileMRU
+
+Comandos ejecutados por el usuario
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+
+Programas ejecutados
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CurrentVersion\Explorer\UserAssist{GUID}\Count
+
+Archivo SOFTWARE
+
+Versión del S.O.
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\
+
+Archivo SYSTEM
+
+CurrentControlSet
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet00x
+HKEY_LOCAL_MACHINE\SYSTEM\SelectCurrent
+
+Nota: El Control Set es el conjunto de parámetros de una configuración del Sistema Operativo. La llave “SelectCurrent” es un apuntador a uno de los posibles ControlSet00x disponibles, y ese es el que se conoce como “CurrentControlSet”. Al hacer puntos de restauración del S.O. y guardar copias del registro, se crean nuevos Control Sets que son backups funcionales de configuraciones anteriores, pero la configuración actual del sistema siempre hace referencia al “CurrentControlSet”.
+
+Nombre del computador en red
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ComputerName
+
+Interfaces de red
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+
+Zona horaria del S.O.
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+
+
+Análisis de procesos ejecutados
+Prefetching:
+
+Estrategia para acelerar la carga de aplicaciones.
+Archivos con información relacionada a la aplicación.
+Se generan y actualizan cuando se ejecuta un proceso.
+
+
+Descargar la herramienta PECmd.exe en https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip 
+sitio oficial https://ericzimmerman.github.io/#!index.md
+
+https://drive.google.com/open?id=1e3t4dhxHZfX51igCu8MJsHsZhnWL-Z-3
+https://github.com/EricZimmerman/PECmd
+
+
+
+Elaborar un informe a partir de los resultados obtenidos en cada una de las etapas de análisis
+
+Hace un par de módulos elaboraste tu informe preliminar. Ahora vamos a ampliar un poco cada una de las secciones para incluir la información que encontraste en tu etapa de análisis. Vamos a ir paso por paso:
+
+Introducción al caso: ¿Qué ha cambiado? ¿Has incluido nueva información? ¿Ha cambiado en algo el contexto del caso? Si no, probablemente el contenido sea muy similar al de tu informe.
+
+Resumen general: Deberías incluir ahora todas las actividades realizadas, pero especialmente enfocándote en las que te dieron resultados más importantes.
+
+Inventario de evidencia identificada: Este inventario probablemente siga siendo el mismo.
+
+Reportes de adquisición de evidencia: En este punto, tal vez tengas algo más de información técnica. Además de los reportes de adquisición, puedes tener informes técnicos de herramientas que hayas usado para el análisis.
+
+Información general de los sistemas preservados: Si no has incluido evidencia nueva, tal vez la información en esta sección no haya cambiado.
+
+Información encontrada en las imágenes forenses: Esta es una de las secciones que probablemente más cambios tuvieron. Prepara la información técnica de los resultados de todos tus análisis.
+
+Hallazgos preliminares, si existen: Aquí ya no vamos a hablar de hallazgos preliminares, sino de todos los hallazgos que encontraste. ¿Qué fue lo más importante o significativo?, ¿Cuál es el dato o la respuesta más relevante?, ¿Vale la pena incluir un análisis de línea de tiempo?
+
+Siguientes pasos: Puede ser que no haya siguientes pasos en la investigación, pero tal vez sí tienes recomendaciones para tu cliente o para quien reciba tus resultados. Tal vez mejorar su sistema de seguridad, instalar algún parche en particular. Este tipo de sugerencias dan mucho valor agregado a tu trabajo. Debes incluirlas cada vez que puedas.
+
+Recuerda que este proceso debes poder hacerlo independientemente de las herramientas que uses o el contexto de la investigación en la que estés. Como reto para este módulo, deberás elaborar un primer borrador de tu informe, actualizando la información que obtuviste como parte del análisis. Más adelante estaremos ordenando esta información en dos informes separados.
+
+
+
+
+Diferencias con Windows:
+
+Configuración independiente por cada proceso. No-centralizado.
+La mayoría de archivos de configuración están en texto plano.
+Varía entre distribuciones y versiones.
+/home/$user: Es la información y configuración de cada usuario.
+
+/etc: Es la configuración general del sistema y de aplicaciones.
+
+/var/log: Es el registro de actividad del sistema operativo y de los usuarios.
+
+Estructura de un sistema Unix
+-------------------------------------
+
+Diferencias con Windows:
+
+Configuración independiente por cada proceso. No-centralizado.
+La mayoría de archivos de configuración están en texto plano.
+Varía entre distribuciones y versiones.
+/home/$user: Es la información y configuración de cada usuario.
+/etc: Es la configuración general del sistema y de aplicaciones.
+/var/log: Es el registro de actividad del sistema operativo y de los usuarios.
+
+
+
+Distrobuciones de Linux
+------------------------------------------------------------
+Si quieren conocer mas distribuciones Linux,
+https://distrowatch.com/?language=ES
+O si quieren probarlas antes de instalarlas en alguna Pc o Vm.
+https://distrotest.net/
+
+Gestores de Arranque
+
+
+
+Arranque y ejecución de procesos en Linux
+-----------------------------------------------------
+
+Para comprender la ejecución de procesos y la información que estos almacenan en un sistema Linux, es importante entender cómo es el proceso de inicio del Sistema Operativo, qué archivos se acceden durante este proceso y qué información se modifica.
+
+Primer paso: El BIOS
+El BIOS (Basic Input/Basic Output) es el primer sistema que carga el procesador cuando se enciende. El BIOS se encarga de detectar el hardware disponible y proporcionar un primer acceso a los dispositivos periféricos, así como de identificar un dispositivo desde el cual iniciar el sistema (regularmente, la primera partición de un disco local). Una vez el BIOS encuentra un dispositivo disponible para iniciar, le deja el control del sistema a éste.
+
+Segundo paso: El gestor de arranque
+En los sistemas Unix existen diferentes gestores de arranque. Éste se encarga de escoger un sistema operativo a partir de una lista de dispositivos y sectores de arranque disponibles. El gestor de arranque más común en Linux probablemente sea GRUB (GRand Unified Bootloader), pero existen otros y es común encontrarlos.
+
+Tercer paso: El kernel de Linux
+El kernel es el proceso principal que ejecuta el sistema operativo Unix y del que dependen todos los demás procesos. Se encarga de administrar los controladores necesarios para usar el hardware, inicializa el sistema de archivos y prepara la memoria.
+
+Cuarto paso: proceso /sbin/init
+Este proceso se encarga de configurar el entorno de usuario. Los archivos de configuración de este proceso se encuentran en la carpeta /etc/inittab, y el primer script que se ejecuta es /etc/init.d/rcS.
+
+A nivel lógico, el proceso init es el proceso del que derivan todos los demás procesos automáticos del sistema. Éste ejecuta todos los procesos que se encuentran en la carpeta /etc/rcS.d/ y en /etc/rc.boot/. Estas carpetas son una gran fuente de referencia para revisar los procesos que se ejecutan por defecto al iniciar el sistema.
+
+El proceso de inicio de procesos descrito es el que ha sido utilizado tradicionalmente en la gran mayoría de distribuciones de Linux. Sin embargo, existen otras alternativas y otros sistemas desarrollados para cumplir el mismo propósito. Como siempre, es importante que sigas aprendiendo y te documentes en todas estas herramientas, porque cambian constantemente y debes estar preparado para entender lo que te encuentres en campo.
+
+
+BIOS
+Un detalle fuera del interés,
+Hasta ahora pensaba que BIOS era el acrónimo de “basic input/output system”. ¿Qué definición es más correcta?
+
+
+Gestores de arranque serian;
+Lilo: https://es.wikipedia.org/wiki/Lilo_(Linux)
+Grub2: https://es.wikipedia.org/wiki/GNU_GRUB
+
+
+
+----------------------------------------------------------------
+Análisis de archivos de autenticación
+
+Configuración de usuarios:
+
+Los usuarios se almacenan en dos archivos:
+/etc/passwd
+/etc/shadow
+Usuarios con privilegios de administración
+/etc/sudoers
+Configuración de grupos:
+/etc/group
+Sintaxis /etc/passwd:
+
+user:x:1001:1001:just a user,111,,:/home/user:/bin/bash
+
+Nombre de usuario
+Password
+ID de usuario (UID)
+ID de grupo (GID)
+Nombre completo
+Carpeta home
+Shell de acceso
+Sintaxis /etc/shadow:
+
+user:$1$HESu9xrH$k.o3G93DGoXliQKkPmUgZ0:14699:0:99999:7:::
+
+Nombre de usuario
+Password cifrado
+Último cambio de password (Días desde el 01/01/1970)
+Mínimo de días para cambiar el password
+Máximo de días en que es válido después de alerta
+Número de días de alerta
+Número de días para desactivar la cuenta
+Expiración de la cuenta
+
+
+------------------------------------------------------------
+https://www.fireeye.com/services/freeware/highlighter.html
+
+-------------------------------------------------
+https://www.sleuthkit.org/autopsy/
+
+Download - FreeMind
+http://freemind.sourceforge.net/wiki/index.php/Download
+
+
+Libros recomendados
+
+Leer el libro “Hacking Exposed - Computer Forensics”
+Leer el libro “Windows Registry Foresincs”
+Leer el libro “Digital Forensics with Open Source Tools”
+Leer el libro “Digital Forensics”
+Guía de estudio “EnCE Study Guide”
+
+
+
+https://forensicswiki.org/
+https://digital-forensics.sans.org/
+https://www.forensicfocus.com/
+https://platzi.com/cursos/ingenieria-datos/
+
+
